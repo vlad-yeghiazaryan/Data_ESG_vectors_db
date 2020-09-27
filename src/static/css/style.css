@@ -1,0 +1,1611 @@
+@font-face {font-family: SF Pro Display; src: url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.eot"); src: url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff") format("woff"), url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.svg#SF Pro Display") format("svg"); }
+body{
+    margin: 0;
+    font-family: SF Pro Display;
+}
+ul{
+    list-style: none;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin-right: 8%;
+}
+a{
+    text-decoration: none;
+
+}
+header{
+    height: 100%;
+}
+#section1{
+    width: 100%;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(250.35deg, #66FFD1 -44.75%, #89F7FE 72.52%);
+}
+.navigation{
+    width: 100%;
+    background-image: linear-gradient(#5FD9C4, #76FBE6, #5FD9C4)
+}
+.navigation ul{
+    margin-left: 60%;
+    background-image: linear-gradient(#5FD9C4, #76FBE6, #5FD9C4)
+}
+.navigation li{
+    margin-left: 3%;
+    background-image: linear-gradient(#5FD9C4, #76FBE6, #5FD9C4)
+}
+
+.backgrnd{
+    width: 100%;
+    height: 937.97px;
+
+    background: url(../images/pictures/Illustration1-1.png);
+}
+.admin-btn {
+    text-decoration: none;
+    width: 55px;
+    height: 19px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color:inherit;
+    padding-right: 50%;
+    margin-right: 50%;
+    border-right: 50%;
+}
+
+.nav-logo{
+    position: absolute;
+    width: 150px;
+    height: 30.08px;
+    margin-top: 3.2%;
+    margin-left: 6%;
+
+    background: url(../images/logos/main-logo.png);
+}
+
+.login-btn{
+    width: 42px;
+    height: 19px;
+    cursor: pointer;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #130D41;
+}
+.sign-btn{
+    text-decoration: none;
+    width: 55px;
+    height: 19px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #130D41;
+}
+.talktous-btn{
+    width: 122px;
+    height: 50px;
+}
+.talktous-rect{
+    width: 122px;
+    height: 50px;
+
+    background: #130D41;
+    border-radius: 34px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+.options-icon{
+    width: 26px;
+    height: 24px;
+}
+.search-icon{
+    width: 18px;
+    height: 24px;
+}
+.globus-icon{
+    width: 26px;
+    height: 27px;
+    background: url(../images/icons/globus.png);
+}
+
+
+
+
+
+
+
+/*Here ends a navigation bar*/
+
+#main-intro{
+    width: 51%;
+    height: 60%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.txt1{
+    width: 853px;
+    height: 300px;
+    margin-left: 2%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    /* or 117% */
+    color: #000000;
+}
+.txt2{
+    width: 638px;
+    height: 87px;
+    margin-left: 2%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    /* or 120% */
+    color: #000000;
+}
+.getapi-btn{
+    background: none;
+    width: 264px;
+    height: 50px;
+    margin-left: 2%;
+    margin-top: 15%;
+
+    border: 3px solid #130D41;
+    border-radius: 34px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #130D41;
+}
+
+
+
+
+/*LOGIN-form*/
+
+.fade{
+    transition: opacity .2s linear!important;
+}
+.form-control{
+    margin: auto;
+    width: 90%!important;
+    height: 50px!important;
+    border-radius: 30px!important;
+    background-color: #EDEDED!important;
+}
+.modal-content{
+    border-radius: 3rem!important;
+}
+label{
+    width: 200px!important;
+    margin-bottom: 0%!important;
+}
+
+.lbl-name{
+    margin-left: 20%;
+    margin-bottom: 3%!important;
+}
+.form-elegant .font-small {
+    font-size: 0.8rem; }
+
+.form-elegant .z-depth-1a {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(124,250,238, 0.26), 0 4px 12px 0 rgba(18,222,238, 0.25);
+    box-shadow: 0 2px 5px 0 rgba(124,250,238 0.26), 0 4px 12px 0 rgba(18,222,238, 0.25); }
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(137,240,254, 0.28), 0 4px 15px 0 rgba(65,205,246, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(137,240,254, 0.28), 0 4px 15px 0 rgba(65,205,246, 0.15); }
+
+.form-elegant .modal-header {
+    border-bottom: none; }
+.close{
+    margin-right: 2%!important;
+    margin-top: 1%!important;
+}
+.modal-dialog .form-elegant .btn .fab {
+    color: #2196f3!important; }
+.modal-dialog{
+    max-width: 550px!important;
+}
+.form-elegant .modal-body, .form-elegant .modal-footer {
+    font-weight: 400; }
+
+.modal-logo{
+    width: 150px;
+    height: 30px;
+    margin-top:  30%!important;
+    margin-left: 125%!important;
+
+    background: url(../images/logos/main-logo.png);
+}
+.remember-line{
+    margin-top: 5%;
+    margin-left: 7%;
+    display: flex;
+}
+/*REMEMBER ME CHECKBOX starts here*/
+.round2{
+    width: 50%;
+    height: 0;
+    margin-left: 8%;
+    margin-bottom: 8%;
+}
+#checkbox-round {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#checkbox-round:checked {
+    background-image: linear-gradient(#5FD9C4, #76FBE6, #5FD9C4);
+}
+.checkbox-txt{
+    cursor: pointer;
+}
+/*REMEMBER ME CHECKBOX ends here*/
+
+
+.logg-btn{
+    width: 282px!important;
+    height: 45px!important;
+    margin: auto;
+
+background: #130D41;
+border-radius: 34px;
+    color: #FFF5F5;
+}
+.footer-dont{
+    margin: auto!important;
+}
+/*LOGIN form ends here*/
+
+
+
+
+
+/*REGISTRATION -form*/
+#checkbox-round2 {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#checkbox-round2:checked {
+    background-image: linear-gradient(#5FD9C4, #76FBE6, #5FD9C4);
+}
+.first-line{
+    margin-left: 3%;
+    display: flex;
+}
+.f-name{
+    margin-right: 9%!important;
+}
+.lbl-name2{
+     margin-left: 14%;
+    margin-bottom: 3%!important;
+}
+.sign-button{
+    width: 282px!important;
+    height: 45px!important;
+    margin: auto;
+
+background: #130D41;
+border-radius: 34px;
+    color: #FFF5F5;
+}
+
+
+
+/*REGISTRATION form ends here*/
+
+
+
+
+
+
+
+
+
+
+/* CONTACT US modal starts here*/
+.contact-modal{
+    max-width: 60%!important;
+    border-radius: 3rem;
+}
+
+.cnt-modal{
+         background: linear-gradient(250.35deg, #66FFD1 -44.75%, #89F7FE 72.52%);
+}
+.contact-main{
+    width: 70%;
+    margin: auto;
+}
+.contact-modal-logo{
+    width: 150px;
+    height: 30px;
+    margin-top:  35%!important;
+    margin-left: 107%!important;
+    margin-bottom: 10% !important;
+    background: url(../images/logos/main-logo.png);
+}
+.cont-title{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 0px;
+    /* identical to box height, or 233% */
+    color: #130D41;
+}
+
+.cont-desc{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 15px;
+    /* identical to box height, or 318% */
+    color: #130D41;
+}
+.cont-info{
+    margin-top: 4%;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+/* identical to box height, or 318% */
+    color: #130D41;
+}
+
+.contact-inputs{
+    display: inline-block;
+    margin: auto;
+}
+#fr-name{
+    margin-right: 5%;
+    background: none;
+    width: 35%;
+    padding-left: 15px;
+    border: none;
+    border-style: none;
+    outline: none;
+    border-bottom: 3px solid black;
+}
+#la-name{
+      background: none;
+    width: 35%;
+    padding-left: 15px;
+    border: none;
+    border-style: none;
+    outline: none;
+    border-bottom: 3px solid black;
+}
+#em-email{
+    margin-top: 5%;
+    margin-right: 5%;
+    background: none;
+    width: 35%;
+    padding-left: 15px;
+    border: none;
+    border-style: none;
+    outline: none;
+    border-bottom: 3px solid black;
+}
+#ph-phone{
+    background: none;
+    width: 35%;
+    padding-left: 15px;
+    border: none;
+    border-style: none;
+    outline: none;
+    border-bottom: 3px solid black;
+}
+#co-company{
+    margin-top: 5%;
+    margin-right: 5%;
+    background: none;
+    width: 35%;
+    padding-left: 15px;
+    border: none;
+    border-style: none;
+    outline: none;
+    border-bottom: 3px solid black;
+}
+
+.round3{
+    width: 100%;
+    height: 0;
+    margin-right: 3%;
+    margin-bottom: 8%;
+}
+#checkbox-1 {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#checkbox-1:checked {
+    background-image: linear-gradient(#5FD9C4, #76FBE6, #5FD9C4);
+}
+#checkbox-2 {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#checkbox-2:checked {
+    background-image: linear-gradient(#5FD9C4, #76FBE6, #5FD9C4);
+}
+#checkbox-3 {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#checkbox-3:checked {
+    background-image: linear-gradient(#5FD9C4, #76FBE6, #5FD9C4);
+}
+.cont-area{
+    font-family: SF Pro Display;
+    display: inline-block;
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 2%;
+    background: none;
+    border: 2px solid #130D41;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 47px;
+}
+.contact-btn{
+    margin-top: 3%;
+    width: 180px!important;
+    height: 40px!important;
+
+    background: #130D41;
+    border-radius: 34px;
+    color: #FFF5F5;
+}
+/* Contact Us ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Section 2 starts here*/
+#section2{
+    width: 100%;
+    height: 100%;
+    margin-top: 3%;
+    padding: 3% 0 3% 0;
+
+    background: #130D41;
+}
+.section2-cont{
+    width: 90%;
+    height: 90%;
+    margin: 2% 5% 3% 5%;
+    text-align: center;
+}
+.sec2-title{
+    width: 100%;
+    height: 100%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+.sec2-descr{
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/*3 Products*/
+
+.product1{
+    display: inline-block;
+    width: 480px;
+    height: 593px;
+    left: 8%;
+    margin-top: 1%;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 88px;
+}
+.p1-logo{
+    width: 92px;
+    height: 79.97px;
+    margin-left: 40%;
+    margin-top: 15%;
+    background: url(../images/icons/product-1.png);
+}
+.p1-title{
+    width: 226px;
+    height: 84px;
+    margin-left: 25%;
+
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 84px;
+    /* identical to box height, or 350% */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.p1-descr{
+    width: 249px;
+    height: 175px;
+    margin-left: 20%;
+    text-align: left;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* or 87% */
+    color: #FFFFFF;
+}
+.p1-btn{
+    width: 264px;
+    height: 56px;
+    margin-top: 8%;
+    background: #130D41;
+    border-radius: 34px;
+    color: #FFFFFF;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+.product2{
+    display: inline-block;
+    width: 480px;
+    height: 593px;
+    margin-top: 1%;
+    margin-left: 3%;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 88px;
+}
+.p2-logo{
+    width: 143.48px;
+    height: 80px;
+    margin-left: 35%;
+    margin-top: 15%;
+
+    background: url(../images/icons/product-2.png);
+}
+.p2-title{
+    width: 131px;
+    height: 84px;
+    margin-left: 36%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 84px;
+    /* identical to box height, or 350% */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.p2-descr{
+    width: 335px;
+    height: 212px;
+    margin-left: 20%;
+    text-align: left;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* or 87% */
+    color: #FFFFFF;
+}
+.p2-btn{
+    width: 264px;
+    height: 56px;
+
+    background: #130D41;
+    border-radius: 34px;
+    color: #FFFFFF;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.product3{
+    display: inline-block;
+    width: 480px;
+    height: 593px;
+    margin-top: 1%;
+    margin-left: 3%;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 88px;
+}
+.p3-logo{
+    width: 109.65px;
+    height: 80px;
+    margin-left: 38%;
+    margin-top: 15%;
+
+    background: url(../images/icons/product-3.png);
+}
+.p3-title{
+    width: 199px;
+    height: 84px;
+    margin-left: 27%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 84px;
+    /* identical to box height, or 350% */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.p3-descr{
+    width: 267px;
+    height: 176px;
+    margin-left: 20%;
+    text-align: left;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* or 87% */
+    color: #FFFFFF;
+}
+.p3-btn{
+    width: 264px;
+    height: 56px;
+    margin-top: 8%;
+
+    background: #130D41;
+    border-radius: 34px;
+    color: #FFFFFF;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+/*Here ends the section 2 and starts section 3 */
+
+#section3{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.sec3-content{
+    height: 90%;
+    margin: 2% 5% 3% 5%;
+}
+
+.sec3-title{
+    width: 100%;
+    height: 52px;
+    margin-bottom: 3%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+.buttonIn{
+    display: inline-block;
+    width: 40%;
+
+    position: relative;
+}
+.area1{
+    position: relative;
+    display: inline-block;
+    resize: none;
+    width: 100%;
+    height: 350px;
+    padding: 3%;
+
+    border: 3px solid #130D41;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.area1-btn{
+    position: absolute;
+    width: 40%;
+    height: 50px;
+    bottom: 10%;
+    right: 5%;
+
+    border: 3px solid #130D41;
+    border-radius: 34px;
+    background: none;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #130D41;
+}
+
+.area2{
+    display: inline-block;
+    margin-left: 3%;
+    resize: none;
+    width: 40%;
+    height: 350px;
+    padding: 3%;
+
+    border: 3px solid #130D41;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+/*Here ends section3 and starts 4*/
+
+#section4{
+    width: 100%;
+    height: 100%;
+
+    padding-top: 1%;
+    padding-bottom: 2%;
+    background: #130D41;
+}
+.sec4-content{
+    width: 90%;
+    height: 100%;
+    margin: 2% 5% 3% 5%;
+    text-align: center;
+}
+.sec4-title{
+    width:100%;
+    margin-bottom: 2%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+.sec4-descr{
+    width: 100%;
+    height: 72px;
+    margin-bottom: 2%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.sec4-illustration{
+    margin-top: 2%;
+    width: 80%;
+    height: auto;
+}
+
+
+/*SECTION 4 ends here, and starts SECTION 5*/
+#section5{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.sec5-content{
+    width: 100%;
+    height: 90%;
+}
+
+.sec5-title{
+    width: 100%;
+    height: 22px;
+    margin-top: 1%;
+    margin-bottom: 4%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 22px;
+    /* identical to box height, or 43% */
+
+    color: #000000;
+}
+.sec5-btn{
+    width: 264px;
+    height: 50px;
+    left: 828px;
+    top: 4521px;
+
+    background: #130D41;
+    border-radius: 34px;
+    color: #FFFFFF;
+    font-family: SF Pro Display;
+    font-size: 20px;
+}
+
+
+
+/*SECTION 5 ends here, and starts SECTION 6*/
+
+#section6{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+    text-align: center;
+    background: #130D41;
+}
+
+.sec6-content{
+    width: 100%;
+    height: 100%;
+}
+
+.sec6-title{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 1%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+.sec6-descr{
+    width: 100%;
+    height: 53px;
+    margin-bottom: 3%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    /* or 132% */
+    text-align: center;
+    color: #FFFFFF;
+}
+.sec6-logo{
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blocks{
+    width: 100%;
+    display: inline-block;
+}
+.sec6-block1{
+    display: inline-block;
+
+    width: 27%;
+    height: 235px;
+    margin-bottom: 1%;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50px 50px 1px 50px;
+}
+
+.sec6-block2{
+    display: inline-block;
+    width: 27%;
+    height: 235px;
+    margin-bottom: 1%;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50px 1px 50px 50px;
+}
+
+.sec6-block3{
+    display: inline-block;
+    margin-left: 33%;
+    width: 27%;
+    height: 235px;
+    margin-bottom: 1%;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50px 50px 50px 1px;
+}
+
+.sec6-block4{
+    display: inline-block;
+    margin-left: 33%;
+    width: 27%;
+    height: 235px;
+    margin-bottom: 1%;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 1px 50px 50px 50px;
+}
+.b1-content{
+    text-align: center;
+    padding: 5%;
+}
+.b1-title{
+    margin-top: 7%;
+    margin-bottom: 8%;
+    width: 100%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+
+    color: #66FFD1;
+}
+.b1-descr{
+    width: 100%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+.b2-content{
+    text-align: center;
+    padding: 5%;
+}
+.b2-title{
+    margin-top: 7%;
+    margin-bottom: 8%;
+    width: 100%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+
+    color: #66FFD1;
+}
+.b2-descr{
+    width: 100%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+
+.b3-content{
+    text-align: center;
+    padding: 5%;
+}
+.b3-title{
+    margin-top: 7%;
+    margin-bottom: 8%;
+    width: 100%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+
+    color: #66FFD1;
+}
+.b3-descr{
+    width: 100%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+
+
+.b4-content{
+    text-align: center;
+    padding: 5%;
+}
+.b4-title{
+    margin-top: 7%;
+    margin-bottom: 8%;
+    width: 100%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+
+    color: #66FFD1;
+}
+.b4-descr{
+    width: 100%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+/* SECTION 7 starts here */
+#section7{
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 1%;
+
+}
+.sec7-content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.sec7-logo{
+    width: 32%;
+    height: auto;
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 15%;
+}
+
+.subscription{
+    padding: 1%;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.sec7-title{
+    width: 100%;
+    height: 27px;
+    margin-bottom: 3%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 47px;
+    line-height: 26px;
+    /* identical to box height, or 56% */
+    color: #000000;
+}
+.sec7-descr{
+    margin-top: 1%;
+    margin-bottom: 10%;
+
+    width: 100%;
+    height: 48px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 25px;
+    /* identical to box height, or 137% */
+    color: #000000;
+}
+#fname{
+    margin-top: 3%;
+    width: 50%;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: none;
+    border-style: none;
+    outline: none;
+    border-bottom: 3px solid black;
+}
+.sec7-btn{
+    margin-top: 2%;
+    width: 30%;
+    height: 50px;
+
+    background: #130D41;
+    border-radius: 34px;
+    color: #FFFFFF;
+    font-family: SF Pro Display;
+    font-size: 18px;
+}
+
+
+
+
+/*ENVIRONEMNTAL DATA PAGE starts here*/
+
+.env-header{
+    width: 100%;
+    height: 100%;
+    background: #130D41;
+    padding-bottom: 3%;
+}
+.head-title{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 84px;
+    margin-left: 6%;
+    padding-top: 2.5%;
+    margin-bottom: 2.5%;
+    /* identical to box height, or 210% */
+
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+.fa-chevron-circle-left{
+    color: #66FFD1;
+    margin-left: 1%;
+}
+
+.head-buttons{
+    width: 60%;
+    display: flex;
+}
+
+.head-btn-active{
+    width: 25%;
+    height: 60px;
+    background: none;
+    margin-left: 10%;
+    color: #FFFFFF;
+    border: 2px solid #66FFD1;
+    border-radius: 34px;
+}
+
+.head-btn{
+    margin-left: 5%;
+    width: 25%;
+    height: 60px;
+    background: none;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 34px;
+}
+
+
+
+
+.wrap-table100 {
+    margin: 5% 10% 5% 10%;
+    width: 1170px;
+}
+table{
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+table thead tr {
+    height: 60px;
+    background: #36304a;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tbody tr {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.2;
+    font-weight: unset;
+}
+.column1 {
+    width: 260px;
+    padding-left: 40px;
+}
+table td, table th {
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   FOOTER STARTS HERE   */
+
+
+footer{
+    width: 100%;
+
+    background: #130D41;
+}
+.footer-content{
+
+    display: flex;
+}
+.f1{
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 7%;
+}
+.footer-logo{
+    width: 131.34px;
+    height: 26.34px;
+
+    background: url(../images/logos/footer-logo.png);
+}
+.footer-txt{
+    margin-top: 5%;
+    margin-bottom: 1%;
+    width: 100%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    /* or 120% */
+
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.f2{
+    width: 15%;
+    margin-top: 4.5%;
+    margin-left: 5%;
+
+    font-family: SF Pro Display;
+    color: #FFFFFF;
+}
+.f2-title{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 350% */
+
+    letter-spacing: 0.03em;
+
+    color: #66FFD1;
+}
+.fa-map-marker{
+    font-size: 20px;
+    color: #66FFD1;
+    margin-right: 3%;
+}
+.fa-phone{
+    color: #66FFD1;
+    margin-right: 3%;
+}
+.fa-envelope-o{
+    color: #66FFD1;
+    margin-right: 3%;
+}
+.contact-location {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height, or 144% */
+
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+
+    color: #FFF5F5;
+}
+.contact-phone{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height, or 144% */
+
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+
+    color: #FFF5F5;
+}
+.contact-email{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height, or 144% */
+
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+
+    color: #FFF5F5;
+}
+
+.f3{
+    width: 15%;
+    margin-left: 5%;
+    margin-top: 4.5%;
+
+}
+.f3-title{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 350% */
+    letter-spacing: 0.03em;
+    color: #66FFD1;
+}
+.f3-links{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    /* identical to box height, or 420% */
+
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+
+.f4{
+    width: 15%;
+    margin-left: 5%;
+    margin-top: 4.5%;
+
+}
+.f4-title{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 350% */
+    letter-spacing: 0.03em;
+    color: #66FFD1;
+}
+.f4-links{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    /* identical to box height, or 420% */
+
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+.footer-low{
+    display: flex;
+    width: 100%;
+}
+.share-bar{
+    width: 25%;
+    margin: 5% 40% 2% 7%;
+
+}
+.share-txt{
+    width: 100%;
+    height: 5px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 165% */
+    color: #FFFFFF;
+}
+.share-icons{
+    width: 30%;
+    height: 40px;
+    display: flex;
+    line-height: 100%;
+}
+.fa-linkedin-square{
+    color: #89F7FE;
+}
+.linkedinn{
+    font-size: 30px;
+    margin-right: 5%;
+
+}
+.fa-twitter-square{
+    color: #89F7FE;
+}
+.twitterr{
+
+    font-size: 30px;
+}
+.footer-copyright{
+    margin-top: 6%;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 389% */
+    color: #FFFFFF;
+}

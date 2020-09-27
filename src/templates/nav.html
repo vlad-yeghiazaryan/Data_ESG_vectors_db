@@ -1,0 +1,21 @@
+{% block content %}
+<nav class="navigation">
+  <a href="home.html">
+    <div class="nav-logo"></div>
+  </a>
+  <ul>
+    <li><a data-toggle="modal" data-target="#Admin-modal-form">
+        <p class="admin-btn">{{username}}</p>
+      </a></li>
+    <li><a data-toggle="modal" data-target="#Login-modal-form">
+        <p class="login-btn">Log In</p>
+      </a></li>
+    <li><a data-toggle="modal" data-target="#Registration-modal-form">
+        <p class="sign-btn">Sign Up</p>
+      </a></li>
+    <li><a data-toggle="modal" data-target="#Contactus-modal-form">
+        <div class="talktous-btn"></div><button class="talktous-rect">Talk To Us</button>
+      </a></li>
+  </ul>
+</nav>
+{% endblock %}

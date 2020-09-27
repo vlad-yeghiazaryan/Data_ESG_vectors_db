@@ -1,0 +1,16 @@
+# Data ESG vectors database
+This is a small django project on editing vector images, saving the coordinates in the server and using the data to aid in the training of pdf converter/OCR ML software.
+
+To setup the app simply run:
+
+````python
+pip install requirements.txt
+````
+
+Once you have the libraries installed, initate the virtualenv `source bin/activate`  from the root and run the server with `python3 manage.py runserver`.
+
+##### The steps above will start a Django session. 
+
+------
+
+For editing/adding vectors to the database check out https://exampledomain.com/vector-editor. For managing the databases you can use the  https://exampledomain.com/admin page or just manually connect to the SQLite database.
