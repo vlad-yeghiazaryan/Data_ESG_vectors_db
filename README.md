@@ -5,7 +5,7 @@ To start go into the main directory `cd Data_ESG_vectors_db-master` and setup th
 ````python
 virtualenv .
 ````
-Initate the virtualenv with `source bin/activate`.
+Initate the virtual environment with `source bin/activate`.
 
 To setup the app simply run:
 
