@@ -10,10 +10,10 @@ Initate the virtual environment with `source bin/activate`.
 To setup the app simply run:
 
 ````python
-pip install requirements.txt
+pip3 install -r requirements.txt
 ````
 
-Once you have the libraries installed, run the server with `python3 manage.py runserver`.
+Once you have the libraries installed, to to the src directory `cd src` and run the server with `python3 manage.py runserver`.
 
 ##### The steps above will start a Django session. 
 
