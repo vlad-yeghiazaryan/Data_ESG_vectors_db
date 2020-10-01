@@ -1,6 +1,11 @@
 # Data ESG vectors database
 This is a small django project on editing vector images, saving the coordinates in the server and using the data to aid in the training of pdf converter/OCR ML software.
 
+To start go into the main directory `cd Data_ESG_vectors_db-master` and setup the virtual environment: 
+````python
+virtualenv .
+````
+
 To setup the app simply run:
 
 ````python
