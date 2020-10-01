@@ -20,3 +20,5 @@ Once you have the libraries installed, to to the src directory `cd src` and run 
 ------
 
 For editing/adding vectors to the database check out https://exampledomain.com/vector-editor. For managing the databases you can use the  https://exampledomain.com/admin page or just manually connect to the SQLite database.
+
+If pressing the send buttion generates the follow error in the browser concole: <span style="color:red">Access to fetch at "url" from origin "Host" has been blocked by CORS policy ...</span>, then make sure to add allowed origins in the **settings.py** file.
