@@ -5,6 +5,7 @@ To start go into the main directory `cd Data_ESG_vectors_db-master` and setup th
 ````python
 virtualenv .
 ````
+Initate the virtualenv with `source bin/activate`.
 
 To setup the app simply run:
 
@@ -12,7 +13,7 @@ To setup the app simply run:
 pip install requirements.txt
 ````
 
-Once you have the libraries installed, initate the virtualenv `source bin/activate`  from the root and run the server with `python3 manage.py runserver`.
+Once you have the libraries installed, run the server with `python3 manage.py runserver`.
 
 ##### The steps above will start a Django session. 
 
