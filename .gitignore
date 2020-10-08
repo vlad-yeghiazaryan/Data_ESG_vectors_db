@@ -5,3 +5,4 @@ bin
 pyvenv.cfg
 open_db.ipynb
 Jupyter Start.app
+.ipynb_checkpoints
