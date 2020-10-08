@@ -93,7 +93,7 @@ const send = async (url, body) => {
 const main = () => {
   // Defined variables
   const url = 'http://localhost:8000/vectors/'
-  const vectors = document.querySelector('#svgcontent > g:nth-child(2)').children
+  const vectors = document.querySelector('#svgcontent > g:nth-child(3)').children
   const vectorsArray = []
 
   for (let index = 1; index < vectors.length; index++) {
