@@ -29,7 +29,4 @@ def get_all_vectors(request, *args, **kargs):
   }
   if request.method == 'GET':
     all_vectors = list(Vector.objects.values())
-    print("\nData Sent: ")
-    print(type(all_vectors))
-    
     return JsonResponse(all_vectors, safe=False)
