@@ -5202,7 +5202,7 @@ svgedit.select.SelectorManager.prototype.initGroup = function() {
           "fill-opacity": 0,
           "stroke-opacity": 0,
           'stroke-width': 0,
-          'style': 'cursor:url(' + config_.imgPath + 'rotate.png) 12 12, auto;'
+          'style': 'cursor:url(' + config_.imgPath + '../../static/images/rotate.png) 12 12, auto;'
         }
     })
   $.data(grip, 'dir', dir);
