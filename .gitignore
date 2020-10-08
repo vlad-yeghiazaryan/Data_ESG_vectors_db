@@ -1,5 +1,6 @@
 # created by virtualenv automatically
 node_modules
+.vscode
 lib/python3.7
 bin
 pyvenv.cfg
