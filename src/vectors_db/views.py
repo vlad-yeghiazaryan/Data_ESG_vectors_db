@@ -17,8 +17,6 @@ def vectors_view(request, *args, **kargs):
   elif request.method == 'POST':
     recevied_data = json.loads(request.body)
     Vector.objects.create(**recevied_data)
-    print("\nData recevied: ")
-    print(recevied_data)
 
     return HttpResponse('Vectors successfully saved.')
 
