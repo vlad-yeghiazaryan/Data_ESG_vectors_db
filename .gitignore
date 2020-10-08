@@ -5,3 +5,4 @@ lib/python3.7
 bin
 pyvenv.cfg
 Jupyter
+.DS_Store
