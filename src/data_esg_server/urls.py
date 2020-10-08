@@ -18,7 +18,7 @@ from django.urls import path
 
 from pages.views import home_view
 from pages.views import contacts_view
-from vectors_db.views import vectors_view
+from vectors_db.views import vectors_view, get_all_vectors
 from vector_editor.views import vectorEditor_view
 
 urlpatterns = [
@@ -26,5 +26,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('contacts/', contacts_view),
     path('vectors/', vectors_view, name='vectors'),
-    path('vector-editor/', vectorEditor_view, name='vectors')
+    path('vector-editor/', vectorEditor_view, name='vectors'),
+    path('all_vectors/', get_all_vectors, name='all_vectors')
 ]

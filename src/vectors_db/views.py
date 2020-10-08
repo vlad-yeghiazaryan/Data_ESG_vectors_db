@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
 
@@ -18,5 +19,17 @@ def vectors_view(request, *args, **kargs):
     Vector.objects.create(**recevied_data)
     print("\nData recevied: ")
     print(recevied_data)
-  
+
     return HttpResponse('Vectors successfully saved.')
+
+@csrf_exempt
+def get_all_vectors(request, *args, **kargs):
+  context = {
+    'username': request.user
+  }
+  if request.method == 'GET':
+    all_vectors = list(Vector.objects.values())
+    print("\nData Sent: ")
+    print(type(all_vectors))
+    
+    return JsonResponse(all_vectors, safe=False)
