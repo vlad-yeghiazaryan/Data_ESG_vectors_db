@@ -3,6 +3,7 @@ from django.db import models
 
 # Create your models here.
 class Vector(models.Model):
+  filename = models.CharField(max_length=40)
   original_fill = models.CharField(max_length=10)
   original_stroke = models.CharField(max_length=10)
   original_stroke_width = models.FloatField()
