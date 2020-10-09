@@ -45,27 +45,24 @@ function mapDOM (element, json) {
 
   return (json) ? JSON.stringify(treeObject) : treeObject
 }
-
-// Cleans up the jsons
-function getVectorJson (vectorElement) {
+// outputs vectors json from html element
+function getVectorJson (vectorElement, commonName = 'n_') {
   let vecData = JSON.parse(mapDOM(vectorElement, true))
   vecData.attributes.type = vecData.type
   vecData = vecData.attributes
-  const vecDataKeys = Object.keys(vecData)
-
+  let vecDataKeys = Object.keys(vecData)
+  // set a common name
+  for (let i = 0; i < vecDataKeys.length; i++) {
+    const newKey = commonName + vecDataKeys[i]
+    Object.defineProperty(vecData, newKey,
+      Object.getOwnPropertyDescriptor(vecData, vecDataKeys[i]))
+    delete vecData[vecDataKeys[i]]
+  }
+  // Cleans up the json
+  vecDataKeys = Object.keys(vecData)
   for (let i = 0; i < vecDataKeys.length; i++) {
     if (vecDataKeys[i].includes('-')) {
       const newKey = vecDataKeys[i].replace('-', '_')
-      Object.defineProperty(vecData, newKey,
-        Object.getOwnPropertyDescriptor(vecData, vecDataKeys[i]))
-      delete vecData[vecDataKeys[i]]
-    } else if (vecDataKeys[i] === 'type') {
-      const newKey = vecDataKeys[i].replace('type', 'shape_type')
-      Object.defineProperty(vecData, newKey,
-        Object.getOwnPropertyDescriptor(vecData, vecDataKeys[i]))
-      delete vecData[vecDataKeys[i]]
-    } else if (vecDataKeys[i] === 'id') {
-      const newKey = vecDataKeys[i].replace('id', 'id_number')
       Object.defineProperty(vecData, newKey,
         Object.getOwnPropertyDescriptor(vecData, vecDataKeys[i]))
       delete vecData[vecDataKeys[i]]
