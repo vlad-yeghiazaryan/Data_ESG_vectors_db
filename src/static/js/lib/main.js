@@ -1,34 +1,45 @@
-import send from './sender.js'
 import makeButton from './button.js'
-import getVectorJson from './vector_to_json.js'
+import formatNSend from './format_n_send.js'
+import createVectorsJson from './create_vectorsJson.js'
 
 // The main function
 const main = async () => {
-  // Defined variables
   const url = '../vectors/'
-  const vectors = document.querySelectorAll('#svgcontent > g')
-  const vectorsArray = []
-
-  debugger
-  for (let index = 1; index < vectors.length; index++) {
-    const vectorCollection = vectors[index].children
-    for (let jIndex = 1; jIndex < vectorCollection.length; jIndex++) {
-      const vector = vectorCollection[jIndex]
-      const vectorJson = getVectorJson(vector, 'original_')
-      vectorsArray.push(vectorJson)
+  // Sets up formatNSend function to the button
+  const decorator = (func, url, originalVectors) => {
+    const inner = () => {
+      return func(url, originalVectors)
     }
+    return inner
   }
-  for (let index = 0; index < vectorsArray.length; index++) {
-    const vector = vectorsArray[index]
-    const jsonBody = JSON.stringify(vector)
+  const saveVectorsNLoadButton = () => {
+    // 4) Save vectors and load button
+    const saveNLoad = () => {
+      // Save initial positions
+      const vectors = document.querySelectorAll('#svgcontent > g')
+      const originalVectors = createVectorsJson(vectors, 'original_')
 
-    const res = await send(url, jsonBody)
-    if (res !== 200) {
-      alert(`Sent ${vectorsArray.length} vector object(s) to the server. Response: ${res}`)
-    } else if (index === vectorsArray.length - 1) {
-      alert(`Sent ${vectorsArray.length} vector object(s) to the server. Response: ${res}`)
+      // Makes the send button
+      makeButton(decorator(formatNSend, url, originalVectors))
     }
+    // 3) Check if svg is loaded
+    let svgLoaded = document.querySelector('#svgcontent > g:nth-child(3)')
+    var checkExist = setInterval(function () {
+      svgLoaded = document.querySelector('#svgcontent > g:nth-child(3)')
+      if (svgLoaded) {
+        // Part 4) runs here
+        saveNLoad()
+        clearInterval(checkExist)
+      }
+    }, 100)
+  }
+  // 1) Wait for window to load
+  window.onload = function () {
+    const svgInput = document.querySelector('#tool_open > input[type=file]')
+    // 2) Wait for .svg to be uploaded
+    svgInput.addEventListener('change', saveVectorsNLoadButton)
   }
 }
 
-makeButton(main)
+// Running the main function
+main()
