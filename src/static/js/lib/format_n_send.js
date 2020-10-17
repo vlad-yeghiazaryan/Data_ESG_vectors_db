@@ -10,7 +10,7 @@ const formatNSend = async (url, originalVectors) => {
 
   // Combining original and new vector objects
   for (const [key, value] of Object.entries(vectorsJson)) {
-    vectorsJson[key] = Object.assign(originalVectors[key], value)
+    vectorsJson[key] = Object.assign(value, originalVectors[key])
   }
   // send vectors
   const vectorEntries = Object.entries(vectorsJson)
