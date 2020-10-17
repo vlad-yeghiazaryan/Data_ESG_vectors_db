@@ -6,6 +6,7 @@ const createVectorsJson = (vectors, version) => {
     var filename = svgFile.value.split(/(\\|\/)/g).pop()
   }
   const vectorsJson = {}
+  const acceptType = ['line']
   for (let index = 1; index < vectors.length; index++) {
     const vectorCollection = vectors[index].children
     for (let jIndex = 1; jIndex < vectorCollection.length; jIndex++) {
@@ -14,7 +15,10 @@ const createVectorsJson = (vectors, version) => {
       // Adding the filename
       vectorJson.filename = filename
       const svgNumber = vectorJson[version + 'id']
-      vectorsJson[svgNumber] = vectorJson
+      const toAcceptType = acceptType.every((val) => val === vectorJson[version + 'type'])
+      if (toAcceptType) {
+        vectorsJson[svgNumber] = vectorJson
+      }
     }
   }
   return vectorsJson
