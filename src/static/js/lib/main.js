@@ -13,6 +13,10 @@ const main = async () => {
     return inner
   }
   const saveVectorsNLoadButton = () => {
+    // Clicks the ok button to load the svg
+    const okButton = document.querySelector('#dialog_buttons > input[type=button]:nth-child(1)')
+    okButton.click()
+
     // 4) Save vectors and load button
     const saveNLoad = () => {
       // Save initial positions
